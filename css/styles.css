@@ -15,6 +15,7 @@ html {
 
 body {
   margin: 0;
+  position:relative;
 
   /*
     We need to add some padding to the bottom of the body on mobile so that
@@ -194,4 +195,152 @@ figure {
 
 .about > p {
   margin: 0;
+}
+
+@media (min-width:786px) {
+
+  .site-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    width:100px;
+    background-color: #ffffff;
+  }
+
+  .site-nav-item {
+
+    width: 100%;
+    height: 60px;
+    font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.6em;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
+  .site-logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    z-index: 101;
+  }
+
+  .site-nav-list {
+    position: absolute;
+    top:90px;
+
+
+  }
+
+  .movie-overview {
+    display: block;
+  }
+
+  main{
+    margin-left:100px;
+  }
+
+  /* FOOTER styles */
+  .site-footer {
+    position:relative;
+    bottom:0;
+    right:0
+    height:72px;*/
+    /*text-align: center;*/
+    float:left;
+    clear:left;
+    margin-left: 100px;
+  }
+
+  .footer-nav {
+    /*padding: 1em;*/
+
+    float:left;
+    background-color: #333333;
+    height: 72px;
+    margin: 0;
+
+  }
+
+.footer-nav-list{
+  padding: 26px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+  .footer-nav-item {
+    display: inline-block;
+    margin-right: 0.5em;
+    color: white;
+
+
+  }
+
+  /*
+    The :last-child pseudo-selector lets you select only the last element
+      within a containing element. Similarly, there's a :first-child pseudo-selector
+      to select the first child of a containing element.
+  */
+  .footer-nav-item:last-child {
+    margin-right: 0;
+  }
+
+
+  .about {
+
+
+    background-color: #333333;
+    color: #ffffff;
+    padding: 1em;
+    height: 72px;
+  }
+
+  .about > p{
+      float: right;
+      margin-right: 90px;
+  }
+
+  .about p:first-child {
+
+    font-size: 17px;
+    padding: 11.5px;
+  }
+
+  .about p:last-child {
+
+    font-size: 17px;
+    padding: 11.5px;
+  }
+
+}
+
+@media (min-width:992px) {
+
+
+
+  .movie {
+    float:left;
+    width:33.333%;
+  }
+
+  .movie-overview {
+    display: none;
+  }
+  main .movie:first-child {
+    width:100%;
+    clear:right;
+
+  }
+
+  main .movie:first-child .movie-overview{
+  display: block;
+  }
+
+
+
 }
