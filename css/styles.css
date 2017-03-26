@@ -262,19 +262,21 @@ figure {
 
     float:left;
     background-color: #333333;
-    height: 72px;
-    margin: 0;
+    height: inherit;
+    padding:0;
+    width:308px;
+    margin: 0 0 0 15px;
 
   }
 
 .footer-nav-list{
-  padding: 26px;
-  position: absolute;
-  top:0;
-  left:0;
+  height:inherit;
+  margin:0;
+  width:308;
 }
   .footer-nav-item {
     display: inline-block;
+    padding:26px 0;
     margin-right: 0.5em;
     color: white;
 
@@ -292,9 +294,9 @@ figure {
 
 
   .about {
-
+    margin:0;
+    padding:0;
     color: #ffffff;
-    padding: 10px;
     height: 72px;
 
   }
@@ -302,20 +304,9 @@ figure {
   .about > p{
       float: right;
       margin:0;
-
-  }
-
-  .about p:first-child {
-
-    font-size: 17px;
-    padding: 11.5px;
-
-  }
-
-  .about p:last-child {
-
-    font-size: 17px;
-    padding: 11.5px;
+      height: 22px;
+      padding: 25px 0;
+      margin-right: 15px;
   }
 
 }
@@ -343,30 +334,6 @@ figure {
   }
 
   main .movie:first-child {
-
-
-  }
-  .about {
-    width:100%;
-  }
-  .about > p{
-      float: right;
-      margin-right: 15px;
-  }
-
-  .about p:first-child {
-
-    font-size: 17px;
-    padding: 11.5px;
-
-  }
-
-  .about p:last-child {
-
-    font-size: 17px;
-    padding: 11.5px;
-  }
-
 
 }
 
