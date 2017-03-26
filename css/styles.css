@@ -197,7 +197,7 @@ figure {
   margin: 0;
 }
 
-@media (min-width:786px) {
+@media (min-width:867px) {
 
   .site-nav {
     position: fixed;
