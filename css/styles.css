@@ -231,9 +231,9 @@ figure {
   }
 
   .site-nav-list {
-    position: absolute;
-    top:90px;
-
+    /*position: absolute;
+    top:90px;*/
+    margin-top: 90px;
 
   }
 
@@ -293,22 +293,23 @@ figure {
 
   .about {
 
-
-    background-color: #333333;
     color: #ffffff;
-    padding: 1em;
+    padding: 10px;
     height: 72px;
+
   }
 
   .about > p{
       float: right;
-      margin-right: 90px;
+      margin:0;
+
   }
 
   .about p:first-child {
 
     font-size: 17px;
     padding: 11.5px;
+
   }
 
   .about p:last-child {
@@ -341,6 +342,49 @@ figure {
   display: block;
   }
 
+  main .movie:first-child {
 
+
+  }
+  .about {
+    width:100%;
+  }
+  .about > p{
+      float: right;
+      margin-right: 15px;
+  }
+
+  .about p:first-child {
+
+    font-size: 17px;
+    padding: 11.5px;
+
+  }
+
+  .about p:last-child {
+
+    font-size: 17px;
+    padding: 11.5px;
+  }
+
+
+}
+
+@media (min-width:1367px) {
+
+  .movie {
+    float:left;
+    width:50%;
+  }
+
+  .movie-overview {
+    display: block;
+  }
+
+  main .movie:first-child {
+    width:50%;
+    clear: none;
+
+  }
 
 }
